@@ -1,4 +1,4 @@
-const { Group, Church, SmallGroup } = require('../models');
+const { Group, User, Church, SmallGroup } = require('../models');
 
 const resolvers = {
 };

@@ -11,6 +11,14 @@ type Group {
     day: String
 }
 
+type User {
+    _id: ID
+    name: String
+    churches: [Church]
+    smallGroups: [SmallGroup]
+    groups: [Group]
+}
+
 type Church {
     _id: ID
     name: String
