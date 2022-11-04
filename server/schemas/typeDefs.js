@@ -30,9 +30,9 @@ type SmallGroup {
 }
 
 type Query {
-    group: [Group]
-    church: [Church]
-    smallGroup: [SmallGroup]
+    groups: [Group]
+    churches: [Church]
+    smallGroups: [SmallGroup]
 }
 
 `;
