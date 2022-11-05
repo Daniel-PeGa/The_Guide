@@ -14,6 +14,7 @@ type Group {
 type User {
     _id: ID
     name: String
+    email: String
     churches: [Church]
     smallGroups: [SmallGroup]
     groups: [Group]
