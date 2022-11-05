@@ -39,6 +39,7 @@ type SmallGroup {
 
 type Query {
     groups: [Group]
+    users: [User]
     churches: [Church]
     smallGroups: [SmallGroup]
 }
