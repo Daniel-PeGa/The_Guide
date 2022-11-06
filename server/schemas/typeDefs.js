@@ -9,6 +9,7 @@ type Group {
     description: TEXT
     time: String
     day: String
+    users: [User]
 }
 
 type User {
@@ -26,6 +27,7 @@ type Church {
     location: String
     denomination: String
     mission: TEXT
+    users: [User]
 }
 
 type SmallGroup {
@@ -36,6 +38,7 @@ type SmallGroup {
     description: TEXT
     time: String
     day: String
+    users: [User]
 }
 
 type Query {

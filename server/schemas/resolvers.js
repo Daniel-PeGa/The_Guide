@@ -3,7 +3,10 @@ const { Group, User, Church, SmallGroup } = require('../models');
 const resolvers = {
     Query: {
         groups: async () => {
-            return await Group.find({});
+            return await Group.find({}).populate({
+                path: 'users',
+                populate: 'name'
+            });
         },
         users: async () => {
             return await User.find({}).populate({
@@ -18,10 +21,16 @@ const resolvers = {
             });
         },
         churches: async () => {
-            return await Church.find({});
+            return await Church.find({}).populate({
+                path: 'users',
+                populate: 'name'
+            };
         },
         smallGroups: async () => {
-            return await SmallGroup.find({});
+            return await SmallGroup.find({}).populate({
+                path: 'users',
+                populate: 'name'
+            });
         }
     }
 };
