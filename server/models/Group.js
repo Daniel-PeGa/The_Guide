@@ -27,7 +27,13 @@ const groupSchema = new Schema(
         day: {
             type: String,
             required: true
-        }
+        },
+        users: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'User'
+            }
+        ]
     }
 );
 

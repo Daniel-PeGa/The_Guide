@@ -21,7 +21,13 @@ const churchSchema = new Schema(
         mission: {
             type: TEXT,
             required: true,
-        }
+        },
+        users: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'User'
+            }
+        ]
     }
 );
 
