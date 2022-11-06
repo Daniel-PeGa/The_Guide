@@ -1,0 +1,42 @@
+[
+    {
+        "name": "ExampleSmallGroupGroup 1",
+        "location": "ExampleSmallGroupGroupLocation 1",
+        "short_description": "ExampleSmallGroupGroupShort_Description 1",
+        "description": "ExampleSmallGroupGroupDescription 1",
+        "time": "ExampleSmallGroupGroupTime 1",
+        "day": "ExampleSmallGroupGroupDay 1"
+    },
+    {
+        "name": "ExampleSmallGroupGroup 2",
+        "location": "ExampleSmallGroupGroupLocation 2",
+        "short_description": "ExampleSmallGroupGroupShort_Description 2",
+        "description": "ExampleSmallGroupGroupDescription 2",
+        "time": "ExampleSmallGroupGroupTime 2",
+        "day": "ExampleSmallGroupGroupDay 2"
+    },
+    {
+        "name": "ExampleSmallGroupGroup 3",
+        "location": "ExampleSmallGroupGroupLocation 3",
+        "short_description": "ExampleSmallGroupGroupShort_Description 3",
+        "description": "ExampleSmallGroupGroupDescription 3",
+        "time": "ExampleSmallGroupGroupTime 3",
+        "day": "ExampleSmallGroupGroupDay 3"
+    },
+    {
+        "name": "ExampleSmallGroupGroup 4",
+        "location": "ExampleSmallGroupGroupLocation 4",
+        "short_description": "ExampleSmallGroupGroupShort_Description 4",
+        "description": "ExampleSmallGroupGroupDescription 4",
+        "time": "ExampleSmallGroupGroupTime 4",
+        "day": "ExampleSmallGroupGroupDay 4"
+    },
+    {
+        "name": "ExampleSmallGroupGroup 5",
+        "location": "ExampleSmallGroupGroupLocation 5",
+        "short_description": "ExampleSmallGroupGroupShort_Description 5",
+        "description": "ExampleSmallGroupGroupDescription 5",
+        "time": "ExampleSmallGroupGroupTime 5",
+        "day": "ExampleSmallGroupGroupDay 5"
+    }
+]

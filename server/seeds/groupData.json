@@ -1,0 +1,42 @@
+[
+    {
+        "name": "ExampleBibleStudyGroup 1",
+        "location": "ExampleBibleStudyGroupLocation 1",
+        "short_description": "ExampleBibleStudyGroupShort_Description 1",
+        "description": "ExampleBibleStudyGroupDescription 1",
+        "time": "ExampleBibleStudyGroupTime 1",
+        "day": "ExampleBibleStudyGroupDay 1"
+    },
+    {
+        "name": "ExampleBibleStudyGroup 2",
+        "location": "ExampleBibleStudyGroupLocation 2",
+        "short_description": "ExampleBibleStudyGroupShort_Description 2",
+        "description": "ExampleBibleStudyGroupDescription 2",
+        "time": "ExampleBibleStudyGroupTime 2",
+        "day": "ExampleBibleStudyGroupDay 2"
+    },
+    {
+        "name": "ExampleBibleStudyGroup 3",
+        "location": "ExampleBibleStudyGroupLocation 3",
+        "short_description": "ExampleBibleStudyGroupShort_Description 3",
+        "description": "ExampleBibleStudyGroupDescription 3",
+        "time": "ExampleBibleStudyGroupTime 3",
+        "day": "ExampleBibleStudyGroupDay 3"
+    },
+    {
+        "name": "ExampleBibleStudyGroup 4",
+        "location": "ExampleBibleStudyGroupLocation 4",
+        "short_description": "ExampleBibleStudyGroupShort_Description 4",
+        "description": "ExampleBibleStudyGroupDescription 4",
+        "time": "ExampleBibleStudyGroupTime 4",
+        "day": "ExampleBibleStudyGroupDay 4"
+    },
+    {
+        "name": "ExampleBibleStudyGroup 5",
+        "location": "ExampleBibleStudyGroupLocation 5",
+        "short_description": "ExampleBibleStudyGroupShort_Description 5",
+        "description": "ExampleBibleStudyGroupDescription 5",
+        "time": "ExampleBibleStudyGroupTime 5",
+        "day": "ExampleBibleStudyGroupDay 5"
+    }
+]
