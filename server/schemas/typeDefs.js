@@ -48,6 +48,13 @@ type Query {
     smallGroups: [SmallGroup]
 }
 
+type Mutation {
+    addGroup(name: String!, location: String!, short_description: String!, description: TEXT!, time: String!, day: String!): Group
+    addChurch(name: String!, location: String!, denomination: String!, mission:TEXT!, time: String!, day: String!): Church
+    addSmallGroup(name: String!, location: String!, short_description: String!, description: TEXT!, time: String!, day: String!): SmallGroup
+    updateUser(id: ID!): User
+}
+
 `;
 
 module.exports = typeDefs;

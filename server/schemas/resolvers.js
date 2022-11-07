@@ -48,8 +48,25 @@ const resolvers = {
         smallGroup: async (paarent, args) => {
             return await SmallGroup.findById(args.id).populate('users');
         }
+    },
 
+    Mutation: {
+        addGroup: async (parent, { name, location, short_description, description, time, day }) => {
+            return await Group.create({ name, location, short_description, description, time, day });
+        },
+        addChurch: async (parent, { name, location, denomination, mission, time, day }) => {
+            return await Church.create({ name, location, denomination, mission, time, day });
+        },
+        addSmallGroup: async (parent, { name, location, short_description, description, time, day }) => {
+            return await SmallGroup.create({ name, location, short_description, description, time, day });
+        },
+        updateUser: async (parent, { id }) => {
+            return await findOneAndUpdate(
+                { _id: id }
 
+                { new: true }
+            );
+        }
     }
 };
  
