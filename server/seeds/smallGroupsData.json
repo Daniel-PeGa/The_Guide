@@ -1,6 +1,6 @@
 [
     {
-        "name": "ExampleSmallGroupGroup 1",
+        "smGroupName": "ExampleSmallGroupGroup 1",
         "location": "ExampleSmallGroupGroupLocation 1",
         "short_description": "ExampleSmallGroupGroupShort_Description 1",
         "description": "ExampleSmallGroupGroupDescription 1",
@@ -8,7 +8,7 @@
         "day": "ExampleSmallGroupGroupDay 1"
     },
     {
-        "name": "ExampleSmallGroupGroup 2",
+        "smGroupName": "ExampleSmallGroupGroup 2",
         "location": "ExampleSmallGroupGroupLocation 2",
         "short_description": "ExampleSmallGroupGroupShort_Description 2",
         "description": "ExampleSmallGroupGroupDescription 2",
@@ -16,7 +16,7 @@
         "day": "ExampleSmallGroupGroupDay 2"
     },
     {
-        "name": "ExampleSmallGroupGroup 3",
+        "smGroupName": "ExampleSmallGroupGroup 3",
         "location": "ExampleSmallGroupGroupLocation 3",
         "short_description": "ExampleSmallGroupGroupShort_Description 3",
         "description": "ExampleSmallGroupGroupDescription 3",
@@ -24,7 +24,7 @@
         "day": "ExampleSmallGroupGroupDay 3"
     },
     {
-        "name": "ExampleSmallGroupGroup 4",
+        "smGroupName": "ExampleSmallGroupGroup 4",
         "location": "ExampleSmallGroupGroupLocation 4",
         "short_description": "ExampleSmallGroupGroupShort_Description 4",
         "description": "ExampleSmallGroupGroupDescription 4",
@@ -32,7 +32,7 @@
         "day": "ExampleSmallGroupGroupDay 4"
     },
     {
-        "name": "ExampleSmallGroupGroup 5",
+        "smGroupName": "ExampleSmallGroupGroup 5",
         "location": "ExampleSmallGroupGroupLocation 5",
         "short_description": "ExampleSmallGroupGroupShort_Description 5",
         "description": "ExampleSmallGroupGroupDescription 5",

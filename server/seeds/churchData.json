@@ -1,32 +1,37 @@
 [
     {
-        "name": "ExampleChurch 1",
+        "churchName": "ExampleChurch 1",
         "location": "ExampleLocation 1",
         "denomination": "ExampleDenomination 1",
-        "mission": "ExampleDenomination 1"
+        "mission": "ExampleDenomination 1",
+        "churchId": "ExampleChurchId1"
     },
     {
-        "name": "ExampleChurch 2",
+        "churchName": "ExampleChurch 2",
         "location": "ExampleLocation 2",
         "denomination": "ExampleDenomination 2",
-        "mission": "ExampleDenomination 2"
+        "mission": "ExampleDenomination 2",
+        "churchId": "ExampleChurchId"
     },
     {
-        "name": "ExampleChurch 3",
+        "churchName": "ExampleChurch 3",
         "location": "ExampleLocation 3",
         "denomination": "ExampleDenomination 3",
-        "mission": "ExampleDenomination 3"
+        "mission": "ExampleDenomination 3",
+        "churchId": "ExampleChurchId3"
     },
     {
-        "name": "ExampleChurch 4",
+        "churchName": "ExampleChurch 4",
         "location": "ExampleLocation 4",
         "denomination": "ExampleDenomination 4",
-        "mission": "ExampleDenomination 4"
+        "mission": "ExampleDenomination 4",
+        "churchId": "ExampleChurchId4"
     },
     {
-        "name": "ExampleChurch 5",
+        "churchName": "ExampleChurch 5",
         "location": "ExampleLocation 5",
         "denomination": "ExampleDenomination 5",
-        "mission": "ExampleDenomination 5"
+        "mission": "ExampleDenomination 5",
+        "churchId": "ExampleChurchId5"
     }
 ]

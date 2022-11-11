@@ -3,7 +3,7 @@ const { gql } = require('apollo-server-express');
 const typeDefs = gql`
 type Group {
     _id: ID
-    name: String
+    groupName: String
     location: String
     short_description: String
     description: String
@@ -14,7 +14,7 @@ type Group {
 
 type User {
     _id: ID
-    name: String
+    username: String
     email: String
     churches: [Church]
     smallGroups: [SmallGroup]
@@ -23,16 +23,17 @@ type User {
 
 type Church {
     _id: ID
-    name: String
+    churchName: String
     location: String
     denomination: String
     mission: String
+    churchId: String
     users: [User]
 }
 
 type SmallGroup {
     _id: ID
-    ussername: String
+    smGroupName: String
     location: String
     short_description: String
     description: String
@@ -57,13 +58,13 @@ type Auth {
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    addGroup(name: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): Group
-    addChurch(name: String!, location: String!, denomination: String!, mission:String!, time: String!, day: String!): Church
-    addSmallGroup(name: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): SmallGroup
+    addGroup(groupName: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): Group
+    addChurch(churchName: String!, location: String!, denomination: String!, mission:String!, churchId: String!, time: String!, day: String!): Church
+    addSmallGroup(smGroupName: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): SmallGroup
     updateUser(id: ID!): User
-    updateGroup(name: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): Group
+    updateGroup(groupName: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): Group
     updateChurch(mission:String!, time: String!, day: String!): Church
-    updateSmallGroup(name: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): SmallGroup
+    updateSmallGroup(smGroupName: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): SmallGroup
 }
 
 `;

@@ -12,3 +12,27 @@ export const QUERY_USERS = gql`
     }
   }
 `;
+
+export const GET_ME = gql`
+{
+  me {
+    _id
+    username
+    email
+    churches {
+      churchId
+      churchName
+      denomination
+    }
+    smallGroups {
+      smGroupName
+      short_description
+      day
+    }
+    groups {
+      groupName
+      short_desctiprion
+      day
+    }
+  }
+}`

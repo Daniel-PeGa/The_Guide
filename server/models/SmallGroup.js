@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 cponst SmallGroupSchema = new Schema(
     {
-        name: {
+        smGroupName: {
             type: String,
             required: true,
             unique: false,

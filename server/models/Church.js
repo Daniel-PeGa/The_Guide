@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const churchSchema = new Schema(
     {
-        name: {
+        churchName: {
             type: String,
             required: true,
             unique: false,
@@ -22,6 +22,10 @@ const churchSchema = new Schema(
             type: TEXT,
             required: true,
         },
+        churchId: {
+            type: String,
+            required: true
+        }
         users: [
             {
                 type: Schema.Types.ObjectId,

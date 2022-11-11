@@ -27,13 +27,13 @@ const resolvers = {
         users: async () => {
             return await User.find({}).populate({
                 path: 'churches',
-                populate: 'name'
+                populate: 'churchName'
             }).populate({
                 path: 'smallGroups',
-                populate: 'name'
+                populate: 'smGroupName'
             }).populate({
                 path: 'groups',
-                populate: 'name'
+                populate: 'groupName'
             });
         },
         user: async (parent, args) => {
@@ -79,14 +79,14 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
         },
-        addGroup: async (parent, { name, location, short_description, description, time, day }) => {
-            return await Group.create({ name, location, short_description, description, time, day });
+        addGroup: async (parent, { groupName, location, short_description, description, time, day }) => {
+            return await Group.create({ groupName, location, short_description, description, time, day });
         },
-        addChurch: async (parent, { name, location, denomination, mission, time, day }) => {
-            return await Church.create({ name, location, denomination, mission, time, day });
+        addChurch: async (parent, { churchName, location, denomination, mission, time, day }) => {
+            return await Church.create({ churchName, location, denomination, mission, churchId, time, day });
         },
-        addSmallGroup: async (parent, { name, location, short_description, description, time, day }) => {
-            return await SmallGroup.create({ name, location, short_description, description, time, day });
+        addSmallGroup: async (parent, { smGroupName, location, short_description, description, time, day }) => {
+            return await SmallGroup.create({ smGroupName, location, short_description, description, time, day });
         },
         updateUser: async (parent, { id }) => {
             return await findOneAndUpdate(
@@ -95,13 +95,13 @@ const resolvers = {
                 { new: true }
             );
         },
-        updateGroup: async (parent, { name, location, short_description, description, time, day }) => {
+        updateGroup: async (parent, { groupName, location, short_description, description, time, day }) => {
             // I Dont even knkow if this is right, gotta check back!
         },
         updateChurch: async (parent, { mission, time, day }) => {
             // I Dont even knkow if this is right, gotta check back!
         },
-        updateSmallGroup: async (parent, { name, location, short_description, description, time, day }) => {
+        updateSmallGroup: async (parent, { smGroupName, location, short_description, description, time, day }) => {
             // I Dont even knkow if this is right, gotta check back!
         }
     }
