@@ -6,7 +6,7 @@ type Group {
     name: String
     location: String
     short_description: String
-    description: TEXT
+    description: String
     time: String
     day: String
     users: [User]
@@ -26,33 +26,44 @@ type Church {
     name: String
     location: String
     denomination: String
-    mission: TEXT
+    mission: String
     users: [User]
 }
 
 type SmallGroup {
     _id: ID
-    name: String
+    ussername: String
     location: String
     short_description: String
-    description: TEXT
+    description: String
     time: String
     day: String
     users: [User]
 }
 
 type Query {
+    me: User
     groups: [Group]
     users: [User]
     churches: [Church]
     smallGroups: [SmallGroup]
 }
 
+type Auth {
+    token: ID!
+    user: User
+}
+
 type Mutation {
-    addGroup(name: String!, location: String!, short_description: String!, description: TEXT!, time: String!, day: String!): Group
-    addChurch(name: String!, location: String!, denomination: String!, mission:TEXT!, time: String!, day: String!): Church
-    addSmallGroup(name: String!, location: String!, short_description: String!, description: TEXT!, time: String!, day: String!): SmallGroup
+    login(email: String!, password: String!): Auth
+    addUser(username: String!, email: String!, password: String!): Auth
+    addGroup(name: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): Group
+    addChurch(name: String!, location: String!, denomination: String!, mission:String!, time: String!, day: String!): Church
+    addSmallGroup(name: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): SmallGroup
     updateUser(id: ID!): User
+    updateGroup(name: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): Group
+    updateChurch(mission:String!, time: String!, day: String!): Church
+    updateSmallGroup(name: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): SmallGroup
 }
 
 `;
