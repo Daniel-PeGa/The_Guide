@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_USERS } from '../utils/queries';
+import { GET_ME } from '../utils/queries';
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_USERS, {
