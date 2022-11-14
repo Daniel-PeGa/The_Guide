@@ -2,6 +2,9 @@
 
 ## User Story
 
+https://docs.google.com/presentation/d/1Y5pFVbukxaZmVlgyKCOINoEFxMKVvWhmYIrPHpXsulc/edit?usp=sharing
+
+
 AS A user
 I WANT to create a profile that includes my name, email, the church I belong to, the small group(s) I belong to, and Bible Study Group(s) I belong to
 SO THAT I can see the times, days, and dates they meet
