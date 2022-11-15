@@ -16,6 +16,7 @@ type User {
     _id: ID
     username: String
     email: String
+    friends: [User]
     churches: [Church]
     smallGroups: [SmallGroup]
     groups: [Group]
@@ -44,8 +45,9 @@ type SmallGroup {
 
 type Query {
     me: User
-    groups: [Group]
     users: [User]
+    user(username: String!): User
+    groups: [Group]
     churches: [Church]
     smallGroups: [SmallGroup]
 }
@@ -58,6 +60,7 @@ type Auth {
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
+    addFriend(friendId: ID!): User
     addGroup(groupName: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): Group
     addChurch(churchName: String!, location: String!, denomination: String!, mission:String!, churchId: String!, time: String!, day: String!): Church
     addSmallGroup(smGroupName: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): SmallGroup

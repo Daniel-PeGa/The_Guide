@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const bcrypt = require('bcrypt');
 
 const userSchema = new Schema(
     {
@@ -14,6 +15,17 @@ const userSchema = new Schema(
             unique: true,
             match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']    
         },
+        password: {
+            type: String,
+            required: true,
+            minlength: 8
+        },
+        friends: [
+            {
+                type: Schema.tYPES.ObjectId,
+                REF: 'User'
+            }
+        ]
         churches: [
             {
                 type: Schema.Types.ObjectId,
