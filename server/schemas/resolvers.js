@@ -13,7 +13,7 @@ const resolvers = {
                 return userData;
             }
             throw new AuthenticationError('Not logged in')
-        }
+        },
 
         groups: async () => {
             return await Group.find({}).populate({
@@ -124,7 +124,7 @@ const resolvers = {
         updateChurch: async (parent, { mission, time, day }) => {
             // I Dont even knkow if this is right, gotta check back!
         },
-        
+
         updateSmallGroup: async (parent, { smGroupName, location, short_description, description, time, day }) => {
             // I Dont even knkow if this is right, gotta check back!
         }
