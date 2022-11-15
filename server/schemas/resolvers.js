@@ -21,10 +21,7 @@ const resolvers = {
                 populate: 'username'
             });
         },
-        group: async (parent, args) => {
-            return await Group.findById(args.id).populate('users');
-        },
-
+        
         users: async () => {
             return await User.find({}).populate({
                 path: 'churches',
@@ -111,7 +108,7 @@ const resolvers = {
 
         updateUser: async (parent, { id }) => {
             return await findOneAndUpdate(
-                { _id: id }
+                { _id: id },
 
                 { new: true }
             );

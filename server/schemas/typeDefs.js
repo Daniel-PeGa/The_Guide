@@ -47,6 +47,7 @@ type Query {
     me: User
     users: [User]
     user(username: String!): User
+    group
     groups: [Group]
     churches: [Church]
     smallGroups: [SmallGroup]

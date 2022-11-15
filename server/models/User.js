@@ -22,10 +22,10 @@ const userSchema = new Schema(
         },
         friends: [
             {
-                type: Schema.tYPES.ObjectId,
+                type: Schema.Types.ObjectId,
                 REF: 'User'
             }
-        ]
+        ],
         churches: [
             {
                 type: Schema.Types.ObjectId,
@@ -46,5 +46,7 @@ const userSchema = new Schema(
         ],
     }
 );
+
+const User = model('User', userSchema);
 
 module.exports = User;

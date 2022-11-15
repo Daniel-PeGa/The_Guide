@@ -19,13 +19,13 @@ const churchSchema = new Schema(
             unique: false
         },
         mission: {
-            type: TEXT,
+            type: String,
             required: true,
         },
         churchId: {
             type: String,
             required: true
-        }
+        },
         users: [
             {
                 type: Schema.Types.ObjectId,

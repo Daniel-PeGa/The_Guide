@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-cponst SmallGroupSchema = new Schema(
+const SmallGroupSchema = new Schema(
     {
         smGroupName: {
             type: String,
@@ -17,7 +17,7 @@ cponst SmallGroupSchema = new Schema(
             required: true
         },
         description: {
-            type: TEXT,
+            type: String,
             required: true
         },
         time: {

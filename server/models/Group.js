@@ -17,7 +17,7 @@ const groupSchema = new Schema(
             required: true
         },
         description: {
-            type: TEXT,
+            type: String,
             required: true
         },
         time: {
