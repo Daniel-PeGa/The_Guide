@@ -45,10 +45,9 @@ type SmallGroup {
 
 type Query {
     me: User
+    groups: [Group]
     users: [User]
     user(username: String!): User
-    group
-    groups: [Group]
     churches: [Church]
     smallGroups: [SmallGroup]
 }

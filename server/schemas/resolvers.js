@@ -21,7 +21,7 @@ const resolvers = {
                 populate: 'username'
             });
         },
-        
+
         users: async () => {
             return await User.find({}).populate({
                 path: 'churches',
@@ -45,20 +45,12 @@ const resolvers = {
                 populate: 'username'
             });
         },
-
-        church: async (parent, args) => {
-            return await Church.findById(args.id).populate('users');
-        },
-
         smallGroups: async () => {
             return await SmallGroup.find({}).populate({
                 path: 'users',
                 populate: 'username'
             })
         },
-        smallGroup: async (paarent, args) => {
-            return await SmallGroup.findById(args.id).populate('users');
-        }
     },
 
 
