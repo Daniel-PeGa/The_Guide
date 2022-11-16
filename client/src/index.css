@@ -1,0 +1,21 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.headerNav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    color: black;
+}
+
+header {
+    color: black;
+}
+
+.headerLogo {
+    display: block;
+    align-items: center;
+    margin: 2px 2px 2px 29px;
+}
