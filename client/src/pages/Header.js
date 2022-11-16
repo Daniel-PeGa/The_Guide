@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navigation from './Navigation';
 import Church from './Church';
 import Friends from './Friends';
-import Group from './Group';
+import Groups from './Group';
 import Profile from './Profile';
 import Home from './Home';
 
@@ -15,6 +15,16 @@ function Header() {
             case 'Church':
                 return <Church />;
             case 'Friends':
+                return <Friends />;
+            case 'Groups':
+                return <Groups />;
+            case 'Profile':
+                return <Profile />;
+            case 'Home':
+                return <Home />;
+
+            default:
+                return <Home />;
         }
     };
 
