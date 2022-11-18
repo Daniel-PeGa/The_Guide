@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navigation from './Navigation';
 import Church from './Church';
 import Friends from './Friends';
-import Groups from './Group';
+import Groups from './Groups';
 import Profile from './Profile';
 import Home from './Home';
 
