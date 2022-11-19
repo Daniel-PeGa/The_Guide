@@ -34,6 +34,6 @@ module.exports = {
             return res.status(400).json({ message: 'passwords wrong'});
         }
         const token = signToken(user);
-        res.json({ token, usrr });
+        res.json({ token, user });
     },
 };
