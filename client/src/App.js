@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 import Home from './pages/Home';
