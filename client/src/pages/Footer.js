@@ -20,14 +20,14 @@ function Footer() {
             <p>
               Romans 5:8
             </p>
-            <Button onclick={donateBtn}>Donate</Button> 
+            <a href="https://buy.stripe.com/test_00g7tF3YzdABblucMM">
+            <Button >Donate</Button> 
+            </a>
           </p>
         </div>
       </footer>  
     );
 }
 
-function donateBtn(){
-}
 
 export default Footer;
