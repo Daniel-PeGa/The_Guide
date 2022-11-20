@@ -48,3 +48,6 @@ SO THAT I no longer belong to them (sad but sometimes necessary)
 AS A user
 I WANT to search for specific a church, a small group, or Bible study group through a filtered search
 SO THAT I dont have to go through so much information
+
+## Important Links
+Heroku:    https://the-guide-1.herokuapp.com
