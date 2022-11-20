@@ -44,8 +44,25 @@ const userSchema = new Schema(
                 ref: 'Group'
             }
         ],
+    },
+    {
+        toJSON: {
+            virtuals: true
+        }
     }
 );
+
+userSchema.pre('save', async function (next) {
+    if (this.isNew || this.isModified('password')) {
+        const saltRounds = 10;
+        this.password = await bcrypt.hash(this.password, saltRounds);
+    }
+    next();
+});
+
+userSchema.virtual('friendCount').get(function () {
+    return this.friends.length;
+});
 
 const User = model('User', userSchema);
 
