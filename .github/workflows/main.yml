@@ -1,0 +1,18 @@
+yml
+    name: Deploy
+
+    on:
+      push:
+        branches:
+          - main
+
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+          - uses: akhileshns/heroku-deploy@v3.12.11
+            with:
+              heroku_api_key: ${{secrets.cec1cf46-7985-498c-809a-3fd7b1bf42ad}}
+              heroku_app_name: "the-guide-1"
+              heroku_email: "eden.a.biltibo@VUMC.org"
