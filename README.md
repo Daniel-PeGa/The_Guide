@@ -1,5 +1,29 @@
 # The_Guide
 
+#Description
+The base idea of the app is that it allows someone to sign up and share there church with the rest of the userbase
+The app uses several technologies that allow people to register churches and place them on a forum for others to see
+The app also allows comments on how to improve the page as well as helpful donations are allowed too
+
+#Tech used
+Front end react
+Node.js
+express
+graph QL
+Mongo DB
+
+#Challenges
+The main issues we encountered was getting all parts to work and be compatibale with each other
+
+#install instructions
+
+Run NPM install, NPM run build, and node server js and that should take care of it
+
+#website use
+Simply login and it takes it from there
+
+
+
 ## User Story
 
 https://docs.google.com/presentation/d/1Y5pFVbukxaZmVlgyKCOINoEFxMKVvWhmYIrPHpXsulc/edit?usp=sharing
@@ -51,3 +75,4 @@ SO THAT I dont have to go through so much information
 
 ## Important Links
 Heroku:    https://the-guide-1.herokuapp.com
+
