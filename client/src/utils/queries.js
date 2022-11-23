@@ -1,37 +1,47 @@
 import { gql } from '@apollo/client';
 
 export const QUERY_USER = gql`
-  query user($username: String!) {
-    user(username: $username) {
+  query users($username: String!) {
+    users(username: $username) {
       _id
       username
       email
-      church {
+      churches {
         _id
-        churchText
-        createdAt
+        churchName
+      }
+      comment {
+        _id
+        commentText
       }
     }
   }
 `;
 
 export const QUERY_CHURCH = gql`
-  query getChurch {
-    church {
+  query churches {
+    churches {
       _id
-      churchText
-      username
-      createdAt
-      comments {
+      churchName
+      users {
         _id
-        commentText
         username
-        createdAt
+        email
       }
     }
   }
 `;
 
+export const QUERY_COMMENT =   gql`    
+  query getComment {
+      comments {
+        _id
+        commentText
+        username
+        churchName
+      }
+    }
+`;
 export const QUERY_ME = gql`
 {
   me {
@@ -40,7 +50,7 @@ export const QUERY_ME = gql`
     email
     churches {
       churchId
-      churchText
+      churchName
       denomination
     }
     smallGroups {

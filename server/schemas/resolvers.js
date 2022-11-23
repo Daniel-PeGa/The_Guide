@@ -90,8 +90,8 @@ const resolvers = {
             return await Group.create({ groupName, location, short_description, description, time, day });
         },
 
-        addChurch: async (parent, { churchName, location, denomination, mission, time, day }) => {
-            return await Church.create({ churchName, location, denomination, mission, churchId, time, day });
+        addChurch: async (parent, { churchName}) => {
+            return await Church.create({ churchName});
         },
 
         addSmallGroup: async (parent, { smGroupName, location, short_description, description, time, day }) => {
