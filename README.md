@@ -5,17 +5,17 @@ The base idea of the app is that it allows someone to sign up and share there ch
 The app uses several technologies that allow people to register churches and place them on a forum for others to see
 The app also allows comments on how to improve the page as well as helpful donations are allowed too
 
-#Tech used
+# Tech used
 Front end react
 Node.js
 express
 graph QL
 Mongo DB
 
-#Challenges
+# Challenges
 The main issues we encountered was getting all parts to work and be compatibale with each other
 
-#install instructions
+# install instructions
 
 Run NPM install, NPM run build, and node server js and that should take care of it
 
