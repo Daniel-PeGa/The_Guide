@@ -1,12 +1,13 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import UserForm from '../components/UserForm';
+import ChurchList from '../components/ChurchList';
+import ChurchForm from '../components/ChurchForm';
 
-import { QUERY_USERS } from '../utils/queries';
+import { QUERY_CHURCH } from '../utils/queries';
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_USERS);
-  const users = data?.users || [];
+ const { loading, data } = useQuery(QUERY_CHURCH);
+const users = data?.users || [];
 
   return (
     <main>
@@ -15,15 +16,15 @@ const Home = () => {
           className="col-12 col-md-10 mb-3 p-3"
           style={{ border: '1px dotted #1a1a1a' }}
         >
-          <UserForm />
+          <ChurchForm />
         </div>
         <div className="col-12 col-md-8 mb-3">
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <UserForm
+            <ChurchList
               users={users}
-              title="Welcome to our fellowship!"
+              title="Welcome to our fellowship! Here are some churches you can start visiting!"
             />
           )}
         </div>

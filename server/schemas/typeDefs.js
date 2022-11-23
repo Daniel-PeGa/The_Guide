@@ -62,7 +62,7 @@ type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     addFriend(friendId: ID!): User
     addGroup(groupName: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): Group
-    addChurch(churchName: String!, location: String!, denomination: String!, mission:String!, churchId: String!, time: String!, day: String!): Church
+    addChurch(churchName: String!): Church
     addSmallGroup(smGroupName: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): SmallGroup
     updateUser(id: ID!): User
     updateGroup(groupName: String!, location: String!, short_description: String!, description: String!, time: String!, day: String!): Group

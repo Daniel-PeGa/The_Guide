@@ -10,8 +10,6 @@ import Auth from '../../utils/auth';
 const ChurchForm = () => {
   const [ChurchText, setChurchText] = useState('');
 
-  const [characterCount, setCharacterCount] = useState(0);
-
   const [addChurch, { error }] = useMutation(ADD_CHURCH, {
     update(cache, { data: { addChurch } }) {
       try {
@@ -26,11 +24,11 @@ const ChurchForm = () => {
       }
 
       // update me object's cache
-      const { me } = cache.readQuery({ query: QUERY_ME });
-      cache.writeQuery({
-        query: QUERY_ME,
-        data: { me: { ...me, church: [...me.church, addChurch] } },
-      });
+      //const { me } = cache.readQuery({ query: QUERY_ME });
+      //cache.writeQuery({
+        //query: QUERY_ME,
+        //data: { me: { ...me, church: [...me.church, addChurch] } },
+      //});
     },
   });
 
@@ -38,10 +36,10 @@ const ChurchForm = () => {
     event.preventDefault();
 
     try {
-      const { data } = await addChurch({
+      const { church } = await addChurch({
         variables: {
-          ChurchText,
-          thoughtAuthor: Auth.getProfile().data.username,
+          churchName: ChurchText,
+          username: Auth.getProfile().data.username,
         },
       });
 
@@ -61,16 +59,15 @@ const ChurchForm = () => {
 
   return (
     <div>
-      <h3>Is there any church you would like to attend?</h3>
+      <h3>Do you have a church you would like to invite others to?</h3>
 
       {Auth.loggedIn() ? (
         <>
           <p
             className={`m-0 ${
-              characterCount === 280 || error ? 'text-danger' : ''
+               ''
             }`}
           >
-            Character Count: {characterCount}/280
           </p>
           <form
             className="flex-row justify-center justify-space-between-md align-center"

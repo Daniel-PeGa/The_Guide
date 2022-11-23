@@ -25,17 +25,10 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_CHURCH = gql`
-  mutation addChurch($churchText: String!) {
-    addChurch(churchText: $churchText) {
+  mutation addChurch($churchName: String!) {
+    addChurch(churchName: $churchName) {
       _id
-      ChurchText
-      username
-      denomination
-      short_description
-      comments {
-        _id
-        commentText
-      }
+      churchName
     }
   }
 `;
@@ -44,7 +37,7 @@ export const ADD_COMMENT = gql`
   mutation addComment($churchId: ID!, $commentText: String!) {
     addComment(churchId: $churchId, commentText: $commentText) {
       _id
-      churchText
+      churchName
       username
       createdAt
       comments {

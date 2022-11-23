@@ -10,21 +10,21 @@ const churchSchema = new Schema(
         },
         location: {
             type: String,
-            required: true,
+            required: false,
             unique: true
         },
         denomination: {
             type: String,
-            required: true,
-            unique: false
+            required: false,
+            unique: false,
         },
         mission: {
             type: String,
-            required: true,
+            required: false,
         },
         churchId: {
             type: String,
-            required: true
+            required: false,
         },
         users: [
             {

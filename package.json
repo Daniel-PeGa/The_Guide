@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "main": "server/server.js",
+    "engines": {
+        "node": "16.8.1"
+    },
     "scripts": {
         "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
         "start:prod": "cd server && npm start",
@@ -14,9 +17,12 @@
     "author": "The_Guide",
     "license": "ISC",
     "devDependencies": {
+        "babel-plugin-styled-components": "^2.0.7",
         "concurrently": "^5.3.0"
     },
     "dependencies": {
-        "stripe": "^11.1.0"
+        "jwt-decode": "^3.1.2",
+        "stripe": "^11.1.0",
+        "styled-components": "^5.3.6"
     }
 }
